@@ -15,7 +15,13 @@ foreach($list as $item){//Item becomes associative array with named key and valu
     echo /*Each iteration add table cell */ '<td>' . $item['title'] . "</td> \n";//Echo value of 'title' on each iteration
     echo '<td>' . $item['priority'] . "<td> \n";
     echo '<td>' . $item['due'] . "<td> \n";
-    echo '<td>' . $item['complete'] . "<td> \n";
+    echo '<td>'; 
+    if ($item['complete']){ //Add condtional true/false complete/incomplete 
+           echo 'Yes';//Print yes if true
+    } else {
+        echo 'No';//Print no if false      
+    }
+    echo "<td> \n";
     echo '</tr>';
 }
 echo '</table>';
