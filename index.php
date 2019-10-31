@@ -2,6 +2,21 @@
 /* !Foreach Loops! */ 
 
 include ('list.php');
+
+/* Foreach Loop key and value */
+
+foreach ($list as $key => $item){
+    echo $key . ' = ' . $item['title'] . "<br />\n";
+}
+/* Output
+0 = Laundry
+1 = Dishes
+2 = Dust
+3 = Vacuum
+4 = Make Dinner
+5 = Clean Out Fridge
+*/
+
 /* Create Table */
 echo '<table>';
 echo '<tr>';//Table row
