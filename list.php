@@ -1,4 +1,5 @@
 <?php
+//Example arrays
 $list = array();
 $list[] = array(
     'title' => 'Laundry',
